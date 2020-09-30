@@ -4,8 +4,11 @@ const students = useStudents();
 const instructors = useInstructors();
 
 // Export a function called getStudentById
+export const getStudentById = (id) =>{
 // It should accept one integer parameter named `id`
 // It should return the student object with the matching ID
+return students.find(getStudentById(1))
+}
 // Ex: getStudentById(1)
 
 // Export a function called getInstructorById
